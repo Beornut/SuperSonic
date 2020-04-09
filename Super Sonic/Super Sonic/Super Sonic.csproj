@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E729239-3BD1-42C1-B758-CBA6D4D24E96}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Super_Sonic</RootNamespace>
+    <AssemblyName>Super Sonic</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IrisSkin2">
+      <HintPath>F:\VS\Common7\IDE\IrisSkin2.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="游戏.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="游戏.Designer.cs">
+      <DependentUpon>游戏.cs</DependentUpon>
+    </Compile>
+    <Compile Include="登录界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="登录界面.Designer.cs">
+      <DependentUpon>登录界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="注册界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="注册界面.Designer.cs">
+      <DependentUpon>注册界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="主界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="主界面.Designer.cs">
+      <DependentUpon>主界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="主界面.resx">
+      <DependentUpon>主界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="注册界面.resx">
+      <DependentUpon>注册界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="游戏.resx">
+      <DependentUpon>游戏.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="登录界面.resx">
+      <DependentUpon>登录界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\向日葵.jpg" />
+    <None Include="Resources\场景1_1.jpg" />
+    <None Include="Resources\场景1_2.png" />
+    <None Include="Resources\场景2_1.jpg" />
+    <None Include="Resources\场景2_2.jpg" />
+    <None Include="Resources\场景3_1.jpg" />
+    <None Include="Resources\场景3_2.jpg" />
+    <None Include="Resources\头像.jpg" />
+    <None Include="Resources\幸运星.jpg" />
+    <None Include="Resources\状态1 %281%29.png" />
+    <None Include="Resources\状态1 %282%29.png" />
+    <None Include="Resources\状态1 %283%29.png" />
+    <None Include="Resources\状态1 %284%29.png" />
+    <None Include="Resources\状态1 %285%29.png" />
+    <None Include="Resources\状态1_2 %281%29.png" />
+    <None Include="Resources\状态1_2 %282%29.png" />
+    <None Include="Resources\状态1_2 %283%29.png" />
+    <None Include="Resources\状态1_2 %284%29.png" />
+    <None Include="Resources\状态1_2 %285%29.png" />
+    <None Include="Resources\状态2.png" />
+    <None Include="Resources\状态2_2.png" />
+    <None Include="Resources\索尼克2.jpg" />
+    <None Include="Resources\索尼克3.jpg" />
+    <None Include="Resources\蘑菇.jpg" />
+    <None Include="Resources\走 %281%29.png" />
+    <None Include="Resources\走 %2810%29.png" />
+    <None Include="Resources\走 %2811%29.png" />
+    <None Include="Resources\走 %2812%29.png" />
+    <None Include="Resources\走 %282%29.png" />
+    <None Include="Resources\走 %283%29.png" />
+    <None Include="Resources\走 %284%29.png" />
+    <None Include="Resources\走 %285%29.png" />
+    <None Include="Resources\走 %286%29.png" />
+    <None Include="Resources\走 %287%29.png" />
+    <None Include="Resources\走 %288%29.png" />
+    <None Include="Resources\走 %289%29.png" />
+    <None Include="Resources\跑 %281%29.png" />
+    <None Include="Resources\跑 %282%29.png" />
+    <None Include="Resources\跑 %283%29.png" />
+    <None Include="Resources\跑 %284%29.png" />
+    <None Include="Resources\跑 %285%29.png" />
+    <None Include="Resources\跑 %286%29.png" />
+    <None Include="Resources\跑 %287%29.png" />
+    <None Include="Resources\跑 %288%29.png" />
+    <None Include="Resources\跳 %281%29.png" />
+    <None Include="Resources\跳 %2811%29.png" />
+    <None Include="Resources\跳 %282%29.png" />
+    <None Include="Resources\跳 %283%29.png" />
+    <None Include="Resources\跳 %284%29.png" />
+    <None Include="Resources\跳 %285%29.png" />
+    <None Include="Resources\跳 %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右212.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右311.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右312.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左112.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左212.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左311.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左312.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\爆炸 %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\爆炸 %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\爆炸 %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\爆炸 %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\爆炸 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\爆炸 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\爆炸 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右112.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\爆炸.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\成功.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\加血.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\失败.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\受伤.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\无敌.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

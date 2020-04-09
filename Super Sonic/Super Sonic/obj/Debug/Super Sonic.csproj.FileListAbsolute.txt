@@ -1,0 +1,13 @@
+C:\Users\Zhao\Desktop\C#闯关游戏\Super Sonic\Super Sonic\bin\Debug\Super Sonic.exe.config
+C:\Users\Zhao\Desktop\C#闯关游戏\Super Sonic\Super Sonic\bin\Debug\Super Sonic.exe
+C:\Users\Zhao\Desktop\C#闯关游戏\Super Sonic\Super Sonic\bin\Debug\Super Sonic.pdb
+C:\Users\Zhao\Desktop\C#闯关游戏\Super Sonic\Super Sonic\obj\Debug\Super Sonic.csprojResolveAssemblyReference.cache
+C:\Users\Zhao\Desktop\C#闯关游戏\Super Sonic\Super Sonic\obj\Debug\Super_Sonic.Properties.Resources.resources
+C:\Users\Zhao\Desktop\C#闯关游戏\Super Sonic\Super Sonic\obj\Debug\Super Sonic.csproj.GenerateResource.Cache
+C:\Users\Zhao\Desktop\C#闯关游戏\Super Sonic\Super Sonic\obj\Debug\Super Sonic.exe
+C:\Users\Zhao\Desktop\C#闯关游戏\Super Sonic\Super Sonic\obj\Debug\Super Sonic.pdb
+C:\Users\Zhao\Desktop\C#闯关游戏\Super Sonic\Super Sonic\bin\Debug\IrisSkin2.DLL
+C:\Users\Zhao\Desktop\C#闯关游戏\Super Sonic\Super Sonic\obj\Debug\Super_Sonic.登录界面.resources
+C:\Users\Zhao\Desktop\C#闯关游戏\Super Sonic\Super Sonic\obj\Debug\Super_Sonic.注册界面.resources
+C:\Users\Zhao\Desktop\C#闯关游戏\Super Sonic\Super Sonic\obj\Debug\Super_Sonic.主界面.resources
+C:\Users\Zhao\Desktop\C#闯关游戏\Super Sonic\Super Sonic\obj\Debug\Super_Sonic.游戏.resources
